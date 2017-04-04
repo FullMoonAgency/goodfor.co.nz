@@ -1,0 +1,25 @@
+h1 {
+  font-size: 2.2em;
+}
+h1, h2 {
+  color: $gf-dark-green;
+}
+.page-header-banner h1 {
+  color: $white;
+  margin: 0;
+    font-size: 3.2em;
+}
+
+
+
+body {
+  font-family: $gt-regular;
+  // -webkit-font-smoothing: antialiased;
+   p, .primary_navigation, #main-footer, .woocommerce_product_categories-2 ul, .product h3 {
+    font-family: $gt-light;
+   }
+   .product h3 {
+    //  font-weight: bold;
+   }
+
+}

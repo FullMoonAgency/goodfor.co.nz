@@ -1,0 +1,31 @@
+//fonts
+@font-face {
+    font-family: 'gt_eesti_displaylight';
+    src: url('../fonts/gt-eesti/gt-eesti-display-light-webfont.eot');
+    src: url('../fonts/gt-eesti/gt-eesti-display-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gt-eesti/gt-eesti-display-light-webfont.woff2') format('woff2'),
+         url('../fonts/gt-eesti/gt-eesti-display-light-webfont.woff') format('woff'),
+         url('../fonts/gt-eesti/gt-eesti-display-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gt_eesti_displayregular';
+    src: url('../fonts/gt-eesti/gt-eesti-display-regular_1-webfont.eot');
+    src: url('../fonts/gt-eesti/gt-eesti-display-regular_1-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gt-eesti/gt-eesti-display-regular_1-webfont.woff2') format('woff2'),
+         url('../fonts/gt-eesti/gt-eesti-display-regular_1-webfont.woff') format('woff'),
+         url('../fonts/gt-eesti/gt-eesti-display-regular_1-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+// font stacks
+$sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif:             "Georgia", Cambria, Times New Roman, Times, serif;
+
+$gt-regular:              'gt_eesti_displayregular', $sans-serif;
+$gt-light:              'gt_eesti_displaylight', $sans-serif;

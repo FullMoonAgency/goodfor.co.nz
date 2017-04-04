@@ -1,0 +1,205 @@
+
+html {
+  height: 100%;
+}
+
+//overwrite bootstrap
+.container-wide {
+    @include media-breakpoint-up(lg) {
+      width:95%;
+      max-width: 1650px;
+    }
+}
+.max-900 {
+  max-width: 900px;
+}
+.center-flex {
+  justify-content: center;
+  align-items: center;
+}
+
+//layout classes
+a {
+  color: $text-color;
+  text-decoration: none;
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+    color: $text-hvr;
+  }
+}
+
+a, input, textarea {
+    outline: none;
+}
+
+body {
+    color: $text-color;
+}
+
+.vheight {
+    padding-top: $vspace/2;
+    padding-bottom: $vspace/2;
+    @include media-breakpoint-up(md) {
+      padding-top: $vspace;
+      padding-bottom: $vspace;
+    }
+}
+.vheight-all {
+    padding-top: $vspace;
+    padding-bottom: $vspace;
+}
+
+.vheight-top {
+  padding-top: $vspace/2;
+  @include media-breakpoint-up(md) {
+    padding-top: $vspace;
+  }
+}
+
+.vheight-bottom {
+  padding-bottom: $vspace/2;
+  @include media-breakpoint-up(md) {
+    padding-bottom: $vspace;
+  }
+}
+
+.banner-height {
+  height: 0;
+  padding-bottom: 90%;
+  @include media-breakpoint-up(md) {
+      padding-bottom: 50%;
+  }
+  @include media-breakpoint-up(lg) {
+      padding-bottom: 30%;
+  }
+}
+
+.center-box {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.background-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.image-hover-overlay {
+  position: relative;
+  .caption {
+    h4 {
+      text-transform: capitalize;
+      font-weight: bold;
+      font-family: $gt-light;
+      font-size: 1.3em;
+      letter-spacing: 0.5px;
+      margin-top: 5px;
+        @include media-breakpoint-up(lg) {
+          font-size: 1.7em;
+        }
+    }
+      @include media-breakpoint-up(md) {
+        opacity: 0;
+        position: absolute;
+        background: $overlay-white;
+        top:0;
+        bottom: 0;
+        left:0;
+        right:0;
+        height: 100%;
+        text-align: center;
+        width: 100%;
+        h4 {
+          display: table-cell;
+          vertical-align: middle;
+          color: $image-overlay-txt;
+        }
+        @include transition(all 0.2s ease-in-out);
+        &:hover {
+          opacity: 1;
+        }
+      }
+  }
+}
+
+.overlay-dark {
+    background: $overlay-black;
+    width: 100%;
+    height:100%;
+}
+
+.overlay-black {
+  background: $overlay-black;
+  color: $white;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.background-image {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+
+
+.paginate {
+  padding-top: $vspace/2;
+  width: 100%;
+}
+
+
+
+
+
+
+//mixins
+
+//USAGE: @include transition(all 0.2s ease-in-out);
+@mixin transition($transition...) {
+  // defining prefixes so we can use them in mixins below
+  $prefixes:      ("-webkit-", "-ms-" );
+  @each $prefix in $prefixes {
+    #{$prefix}transition: $transition;
+  }
+}
+
+@mixin placeholder-color($color) {
+  // defining prefixes so we can use them in mixins below
+  $prefixes:      ("::-webkit-input-", ":-moz-", "::-moz-", ":-ms-input-" );
+  @each $prefix in $prefixes {
+    #{$prefix}placeholder {
+      color: $color;
+    }
+  }
+}
+@include media-breakpoint-up(lg) {
+
+
+/**************************Animation**********************************************************************/
+  .page-header-banner .center-box, .full-width-banner .center-box, .featured-text p, .image-hover-overlay, .media-logo, .newsletter-banner .row, .missing-anything .container   {
+    opacity: 0;
+    transform: translateY(10px);
+    @include transition(all 0.4s ease-in-out);
+  }
+
+
+  body.fullmoon_theme .show-item {
+  	opacity: 1;
+  	transform: translateY(0);
+  }
+
+  .parallax {
+    background-attachment: fixed !important;
+  }
+
+}

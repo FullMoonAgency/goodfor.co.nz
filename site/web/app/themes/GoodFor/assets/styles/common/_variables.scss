@@ -1,0 +1,75 @@
+
+/*************************************************************
+**GLOBAL
+**************************************************************/
+
+$vspace:                80px;
+$header-height:          59px;
+$fa-font-path:          '~font-awesome/fonts';
+
+// Slick Carousel font path
+$slick-font-path: "~slick-carousel/slick/fonts/";
+
+// Slick Carousel ajax-loader.gif path
+$slick-loader-path: "~slick-carousel/slick/";
+
+
+
+/*************************************************************
+**COLORS
+**************************************************************/
+
+$brand-primary:         #27ae60;
+$gf-dark-green:         #40695e;
+$gf-darker-green:       #3a5e54;
+$gf-light-green:        #C2BB86;
+$gf-black:              #403836;
+$gf-white:              #EFE8E8;
+$gf-pink:               #E7BAC0;
+$gf-grey:               #C3B3B6;
+
+
+$white:                 #fff;
+$black:                 #000;
+$light-black:           lighten($black, 20%);
+$grey:                  #ddd;
+$dark-gray:             #555;
+$hover-gray:            #f00;
+$background-gray:       #f2f2f2;
+$border-gray-h:         #a0a0a0;
+$border-grey:           #c1c1c1;
+$faded-grey:            #f7f7f7; //.bg-faded
+$overlay-black:         rgba(0,0,0,0.35);
+$overlay-white:         rgba(255,255,255,0.7);
+$overlay-green:         rgba(255,255,255,0.4);
+
+
+
+/*************************************************************
+**COLOR USES
+**************************************************************/
+
+$text-color:            $gf-black;
+$text-hvr:              $gf-dark-green;
+
+$image-overlay-txt:     $text-color;
+
+//HEADER
+$header-background:     $white;
+$header-txt:            $text-color;
+$header-hvr:            $text-hvr;
+
+//FOOTER
+$footer-bk:             $gf-dark-green;
+$footer-bk:             $gf-dark-green;
+$footer-txt:            $gf-white;
+$footer-hvr:            $white;;
+$border-footer:         $dark-gray;
+
+//HOME PAGE
+$newsletter-home-bk:    $background-gray;
+$newsletter-home-txt:   $gf-dark-green;
+$featured-text:         $black;
+
+//woocommerce
+$att_select:            #777;

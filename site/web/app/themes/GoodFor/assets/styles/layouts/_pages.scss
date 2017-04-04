@@ -1,0 +1,188 @@
+/*************************************************************
+**Home
+**************************************************************/
+
+.home {
+  position: relative;
+  height: 100%;
+  .content {
+    position: relative;
+      height: 100%;
+  }
+  .page-header-banner {
+    position: relative;
+    height: 100%;
+    height: calc(100% - #{$header-height});
+    padding-bottom: 0;
+    img {
+      width:400px;
+    }
+    a.btn-outline {
+      margin-top: 25px;
+      margin-bottom: 20px;
+      &:hover {
+        background: $gf-dark-green;
+        color: $white;
+        border-color: $gf-dark-green;
+
+      }
+    }
+
+  }
+  .full-width-banner {
+    margin-top: $vspace/2;
+        @include media-breakpoint-up(md) {
+            margin-top: $vspace;
+        }
+    p {
+      color: $white;
+      font-size: 1.2em;
+      // max-width: 450px;
+      // margin: auto;
+      @include media-breakpoint-up(md) {
+          font-size: 30px;
+      }
+    }
+  }
+}
+
+/*************************************************************
+**shop
+**************************************************************/
+.shop {
+  .missing-anything {
+    margin-top: $vspace/2;
+    @include media-breakpoint-up(md) {
+      margin-top: $vspace/2;
+    }
+  }
+  .featured-text {
+    font-size: 1.2em;
+  }
+}
+
+
+/*************************************************************
+**About
+**************************************************************/
+.about-us {
+  max-width: 900px;
+  margin: auto;
+}
+
+
+
+
+/*************************************************************
+**CONTACT PAGE
+**************************************************************/
+
+.contact-page {
+  //padding-top: $header-height;
+
+  header {
+    height: 0;
+    padding-bottom: 70%;
+    @include media-breakpoint-up(md) {
+      padding-bottom: 40%;
+    }
+    @include media-breakpoint-up(lg) {
+      padding-bottom: 35%;
+    }
+    position: relative;
+    .map-box {
+      position: absolute;
+      width: 100%;
+      height:100%;
+    }
+    #map {
+      width: 100%;
+      height:100%;
+    }
+  }
+  .contact-body {
+    max-width: 850px;
+    text-align: center;
+    @include media-breakpoint-up(md) {
+      text-align: left;
+    }
+    .contact-heading {
+      padding: $vspace/2;
+      p {
+        margin: 0;
+      }
+    }
+    .row {
+      padding-bottom: $vspace;
+      .contact-details {
+        h3 {
+          font-size: 1.5em;
+        }
+        h2 {
+          margin-top: 40px;
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+      }
+      .contact-form {
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          li {
+            margin: 10px 0;
+            &:first-child {
+              margin: 0;
+            }
+            .gfield_label {
+              display: none;
+            }
+            .ginput_container {
+              input, textarea  {
+                padding: 6px 12px;
+              }
+              .large {
+                width: 100%;
+              }
+              textarea {
+                height: 200px;
+              }
+            }
+          }
+        }
+        .gform_footer {
+          input[type="submit"] {
+            background: $gf-dark-green;
+            color: $white;
+            border: 0;
+            border-radius: 0;
+            display: block;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: lighter;
+            font-size: 12px;
+            padding: 11px 55px;
+            cursor: pointer;
+            @include transition(all 0.2s ease-in-out);
+            &:hover {
+                background: lighten($gf-dark-green, 10%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/*************************************************************
+**Blog Inner
+**************************************************************/
+
+.single-post {
+  .page-header-banner h1 {
+    max-width: 900px;
+    margin: auto;
+  }
+}
